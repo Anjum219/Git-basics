@@ -1,3 +1,18 @@
-1. Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
+1. Create a new repository on GitHub. To avoid errors, do not initialize 
+the new repository with README, license, or gitignore files. You can add 
+these files after your project has been pushed to GitHub.
 
-2. 
+# open git bash and write the following commands
+
+2. git init
+
+3. git remote add origin https://github.com/Anjum219/repository_name.git
+
+4. git checkout -b main 
+# switches from branch master to a new branch main
+
+5. git add .
+
+6. git commit -m "commit message"
+
+6. git push origin main
