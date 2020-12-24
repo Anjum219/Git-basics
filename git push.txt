@@ -15,4 +15,4 @@ these files after your project has been pushed to GitHub.
 
 6. git commit -m "commit message"
 
-6. git push origin main
+7. git push origin main
