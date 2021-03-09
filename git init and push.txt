@@ -8,11 +8,10 @@ these files after your project has been pushed to GitHub.
 
 3. git remote add origin https://github.com/<user_name>/<repository_name>.git
 
-4. git checkout -b main 
-# switches from branch master to a new branch main
+#repository is linked. Now to push the contents every time, use following commands.
 
-5. git add .
+4. git add .
 
-6. git commit -m "commit message"
+5. git commit -m "commit message"
 
-7. git push origin main
+6. git push origin master
