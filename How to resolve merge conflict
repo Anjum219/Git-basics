@@ -1,0 +1,19 @@
+
+Merge conflict may occur when we work on different branches
+and try to merge the commits of local branch to remote branch. 
+Or it may occur while trying to rebase the local branch with 
+remote branch, since there can be files with conflicts. VS code 
+shows the changes in the conflicting file. You can use the 
+editor to resolve conflicts. Sometimes we need to resolve it 
+manually. After manually editing the file, do the following-
+
+  $ git add <file_name>
+  
+Now, if you were trying to merge your local branch in remote,
+
+  $ git push <remote> <local_branch>
+  
+Or if you were trying to rebase your local branch with remote,
+
+  $ git rebase --continue
+  
