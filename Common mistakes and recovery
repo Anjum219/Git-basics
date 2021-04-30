@@ -1,0 +1,38 @@
+
+Mistakes gonna happen when we start using git. We don't know 
+clearly what a command does, but still we use it. Sometimes we 
+get unexpected results and then understand, oh this is how the 
+command is supposed to work. But in the meantime, we did some 
+terrible mistakes. If you face this, you are lucky. Because, 
+you are going to learn how to recover the mistakes and it will 
+go a long way!
+
+Let's start by rollbacking commits. You may have a type in your 
+commit. Or you may not be ready to commit yet. Or you accidently
+merged some commits in your branch. Now you just want to forget 
+it. So do this-
+
+  $ git reset --soft HEAD~<number_of_commits>
+  
+You can check commit history by-
+
+  $ git log
+  
+If you stage your changes in some files that you don't wanna 
+commit, you can unstage them using-
+
+  $ git restore --staged <file_name>
+  
+I got into a situation when I needed to change the parent of a 
+branch. Suppose, you have a master branch and a branch named 
+"hello". Inside hello branch, you created another branch named 
+"world". You realized that world' commit should be over the top 
+of master's commits i.e., the parent branch should be master.
+You have nothing to worry. Just do the following-\
+
+  $ git rebase --onto master hello world
+  
+It can seen as 
+
+  $ git rebase --onto <new_parent> <old_parent> <child_branch>
+  
