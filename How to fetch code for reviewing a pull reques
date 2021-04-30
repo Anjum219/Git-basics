@@ -1,8 +1,20 @@
 
 Copy the HTTPS/SSH link from the remote repository you want to fetch.
-At your local, write the command
-`git add remote <remote_name> <HTTPS/SSH link>`
+At your local, write the following command. 
+
+  $ git add remote <remote_name> <HTTPS/SSH link>
 
 This adds the remote repository in the local branch you are in.
 Now fetch the code from the remote-
-  $ git fetch origin 
+
+  $ git fetch <remote_name>
+
+Remember, you don't want to merge the code of the PR with your local 
+branch. git fetch brings the code to you but don't merges with you. So, 
+don't do "git pull <remote_name> <branch_name>".
+Now to run the code and work with it locally, do
+
+  $ git checkout -t <remote_name>/<branch_name>
+  
+This will create a branch at your local with the same name as the name
+of the remote's branch.
