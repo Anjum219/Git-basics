@@ -1,4 +1,6 @@
 
+FOR FIRST TIME
+
 Copy the HTTPS/SSH link from the remote repository you want to fetch.
 At your local, write the following command. 
 
@@ -18,3 +20,10 @@ Now to run the code and work with it locally, do
   
 This will create a branch at your local with the same name as the name
 of the remote's branch.
+
+
+FOR FUTURE WORKING ON THAT REMOTE BRANCH
+
+  $ git fetch <remote_name> <branch_name>
+  $ git checkout <branch_name>
+  $ git merge <remote_name>/<branch_name> --ff-only
