@@ -7,12 +7,16 @@ terrible mistakes. If you face this, you are lucky. Because,
 you are going to learn how to recover the mistakes and it will 
 go a long way!
 
-Let's start by rollbacking commits. You may have a type in your 
-commit. Or you may not be ready to commit yet. Or you accidently
-merged some commits in your branch. Now you just want to forget 
-it. So do this-
+Let's start by rollbacking commits. You may have a typo in your 
+commit. Or you may not be ready to commit yet. But you want to
+keep the changes. So do this-
 
   $ git reset --soft HEAD~<number_of_commits>
+  
+You may accidently merge some commits in your branch. Now you 
+just want to forget it. To undo the changes-
+
+  $ git reset --hard HEAD~<number_of_commits>
   
 You can check commit history by-
 
@@ -35,4 +39,9 @@ You have nothing to worry. Just do the following-\
 It can seen as 
 
   $ git rebase --onto <new_parent> <old_parent> <child_branch>
+  
+Some cool features of git rebase interactive mode can be accessed
+with-
+
+  $ git rebase -i HEAD~<number_of_commits>
   
