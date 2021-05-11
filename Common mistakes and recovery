@@ -40,8 +40,3 @@ It can seen as
 
   $ git rebase --onto <new_parent> <old_parent> <child_branch>
   
-Some cool features of git rebase interactive mode can be accessed
-with-
-
-  $ git rebase -i HEAD~<number_of_commits>
-  
