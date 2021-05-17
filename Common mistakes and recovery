@@ -27,6 +27,19 @@ commit, you can unstage them using-
 
   $ git restore --staged <file_name>
   
+You may have some untracked files, not yet added to the working 
+tree. Suppose, you don't need these modifications. These changes 
+are not staged or committed, so how can we discard them? By 
+using git clean
+
+  $ git clean -d -n
+  
+It shows the modified files. If you want to keep any of these,
+you can use- git add <file_name>. Then write the following to 
+discard rest of the modifications-
+
+  $ git clean -d -f
+  
 I got into a situation when I needed to change the parent of a 
 branch. Suppose, you have a master branch and a branch named 
 "hello". Inside hello branch, you created another branch named 
