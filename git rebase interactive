@@ -3,6 +3,10 @@ To access a lot of features in git interactive mode-
 
   $ git rebase -i HEAD~<no_of_commits>
   
+Or checkout in your branch and
+
+  $ git rebase -i master
+  
 Now, in place of "pick", type the suggested keywords to apply
 required changes. For example, to squash the 5th commit with the
 4th, erase the "pick" before 5th commit and type "s". Then press
