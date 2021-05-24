@@ -27,3 +27,5 @@ FOR FUTURE WORKING ON THAT REMOTE BRANCH
   $ git fetch <remote_name> <branch_name>
   $ git checkout <branch_name>
   $ git merge <remote_name>/<branch_name> --ff-only
+  or
+  $ git reset --hard <remote_name>/<branch_name>
