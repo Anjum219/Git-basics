@@ -1,4 +1,0 @@
-#if a local git repository is updated remotely, then to merge the remote 
-and local version, we can do the following
-
-1. git pull origin main
