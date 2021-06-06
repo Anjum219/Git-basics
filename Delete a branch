@@ -1,8 +1,0 @@
-To delete a branch locally which is merged with the remote branch
-
-  $ git branch -d <branch_name>
-  
-If the branch is not merged yet,
-
-  $ git branch -D <branch_name>
-  
