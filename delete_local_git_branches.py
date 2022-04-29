@@ -10,8 +10,7 @@ def destructure_branches(branches):
 def unify_commands(commands):
 	return '\n'.join(commands)
     	
-
-def delete_git_branches(branches):
+def get_delete_commands(branches):
     delete_commands = []
     for branch in destructure_branches(branches):
         delete_commands.append('git branch -D ' + branch)
