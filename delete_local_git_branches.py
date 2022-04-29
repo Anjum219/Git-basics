@@ -25,7 +25,7 @@ test2"""
 if __name__ == '__main__':
 	main()
 
-###### output #######
-# git branch -D test1
-# git branch -D test2
-#####################
+###### output #########
+# git branch -D test1 #
+# git branch -D test2 #
+#######################
